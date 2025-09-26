@@ -10,7 +10,8 @@ import ControlPanel from "../../components/ControlPanel";
 import SchedulerPanel from "../../components/SchedulerPanel";
 import SimulationControls from "../../components/SimulationControls";
 import AuditTrail from "../../components/AuditTrail";
-import { sendCommandMock, scheduleCommandMock } from "../../api/operationsApi";
+import { sendCommand } from "../../api/apiClient"; // ✅ real API
+import { scheduleCommandMock } from "../../api/operationsApi"; // keep mock for now
 import { MOCK_NODES } from "../../utils/mockNodes";
 import type { NodeType } from "../../utils/mockNodes";
 
@@ -25,7 +26,7 @@ export default function OperationsPage() {
   // global auto mode (demo toggle)
   const [globalAuto, setGlobalAuto] = useState(true);
 
-  // nodes for control panel
+  // nodes for control panel (TODO: replace MOCK_NODES with backend later)
   const nodes: NodeType[] = MOCK_NODES;
 
   // KPIs derived
@@ -36,31 +37,33 @@ export default function OperationsPage() {
     return { total, critical, alerts };
   }, [events]);
 
+  // ✅ Updated sendCommand
   const handleSendCommand = async (payload: {
     nodeIds: string[];
     command: CommandItem["command"];
     params?: any;
   }) => {
-    // call mock API
-    const res = await sendCommandMock({
-      nodeIds: payload.nodeIds,
-      command: payload.command,
-      params: payload.params,
-    });
-    // push audit
-    setAudit((prev) => [res, ...prev].slice(0, 500));
-    // inject a manual-command event for the feed
-    injectEvent({
-      id: `EV-CMD-${Date.now()}`,
-      ts: new Date().toISOString(),
-      type: "manual-command",
-      nodeId: payload.nodeIds[0],
-      severity: "info",
-      summary: `Manual command ${payload.command} -> ${payload.nodeIds.length} node(s)`,
-      details: { result: res.result },
-    } as EventItem);
+    try {
+      const res = await sendCommand(payload); // call backend
+      setAudit((prev) => [res, ...prev].slice(0, 500));
+
+      // inject an event so UI updates immediately
+      injectEvent({
+        id: `EV-CMD-${Date.now()}`,
+        ts: new Date().toISOString(),
+        type: "manual-command",
+        nodeId: payload.nodeIds[0],
+        severity: "info",
+        summary: `Manual command ${payload.command} -> ${payload.nodeIds.length} node(s)`,
+        details: { result: res.result },
+      } as EventItem);
+    } catch (err) {
+      console.error("Command failed", err);
+      alert("Failed to send command");
+    }
   };
 
+  // keep mock scheduler for now
   const handleSchedule = async (payload: {
     nodeIds: string[];
     command: CommandItem["command"];
