@@ -1,0 +1,165 @@
+/* src/styles.css */
+/* src/styles.css */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: #f6f8fb;
+  color: #0f172a;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+}
+
+/* custom CLB marker visuals */
+.clb-div-icon {
+  background: transparent;
+  border: 0;
+}
+.clb-marker {
+  position: relative;
+  display: inline-block;
+  transform: translateY(0);
+}
+.clb-marker-outline {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85);
+}
+.clb-marker-body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(8, 15, 40, 0.12);
+}
+.clb-marker-badge {
+  position: absolute;
+  right: 2px;
+  top: -4px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+.marker-pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  opacity: 0.18;
+  animation: clb-pulse 1.4s ease-out infinite;
+}
+@keyframes clb-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* markers: small circle with border, no text */
+.clb-div-icon {
+  background: transparent;
+  border: 0;
+}
+.clb-marker {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-13px);
+}
+.clb-marker-body {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(8, 15, 40, 0.12);
+  border: 3px solid rgba(255, 255, 255, 0.95);
+}
+/* slightly larger ring to help see on map */
+.clb-marker-outline {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
+}
+
+/* pulse (for critical or when event arrives) */
+.marker-pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  opacity: 0.22;
+  animation: clb-pulse 1.4s ease-out infinite;
+}
+@keyframes clb-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* cluster style (overrides markercluster defaults minimally) */
+.leaflet-marker-icon .cluster-count {
+  color: #fff;
+  font-weight: 700;
+}
+
+.clb-popup-action,
+.clb-popup-balance {
+  border: none;
+  background: #0b57d0;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.clb-popup-balance {
+  background: #00a896;
+}
+.clb-popup-action:hover,
+.clb-popup-balance:hover {
+  opacity: 0.9;
+}
+
+/* Ensure main app root is not flex-centered (fixes Recharts shrink issue) */
+#root {
+  display: block !important;
+  width: 100%;
+  height: auto;
+}
