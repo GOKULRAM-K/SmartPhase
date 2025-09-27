@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# ⚡ Kerala Load Balancer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Smart Load Balancer & Monitoring Dashboard** for power distribution systems in Kerala.  
+Built with **React (Vite + TypeScript)**, **Material UI**, and **Recharts**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 Features
 
-## React Compiler
+- **Real-time Insights & Analytics**
+  - KPI cards (Average VUF, Critical Nodes, Avg Neutral Current, Nodes in view)
+  - Interactive Line Charts, Bar Charts, and Pie Charts
+  - Distribution and Alerts visualized with `Recharts`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Node Management**
+  - View all nodes with details like ID, district, feeder, mode, VUF, neutral current
+  - Drill down into individual node details
 
-## Expanding the ESLint configuration
+- **Operations**
+  - Manage operational modes (auto/manual)
+  - Refresh and export node data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Exports**
+  - Export filtered node data to **CSV**
+  - Export top critical nodes to **JSON**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Responsive Dashboard**
+  - Optimized for desktop and mobile
+  - Built using Material-UI Grid & Paper components
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Tech Stack
+
+- **Frontend:** React, TypeScript, Vite  
+- **UI Components:** Material UI (MUI v5)  
+- **Charts:** Recharts  
+- **Icons:** Material Icons  
+- **State Management:** React Hooks (`useState`, `useMemo`)  
+- **Routing:** React Router v6  
+
+---
+
+## 📂 Project Structure
+
+
+
+src/
+├── components/ # Layout, shared UI components
+├── pages/
+│ ├── Home/ # Landing page
+│ ├── Nodes/ # Node listing
+│ ├── NodeDetail/ # Node detail view
+│ ├── Operations/ # Operations console
+│ ├── Insights/ # Insights & Analytics dashboard
+│ └── ControlConsole/ # Control console
+├── utils/
+│ └── mockNodes.ts # Mock data for nodes & telemetry
+└── App.tsx # App routes
+
+
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/GOKULRAM-K/Kerala_Load_Balancer.git
+cd Kerala_Load_Balancer
+```
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+3. Run locally
+```bash
+npm run dev
+```
+The app will be available at http://localhost:5173
+
+📦 Build for Production
+```bash
+npm run build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
