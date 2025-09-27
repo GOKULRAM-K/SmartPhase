@@ -44,19 +44,20 @@ Built with **React (Vite + TypeScript)**, **Material UI**, and **Recharts**.
 ## 📂 Project Structure
 
 
-
+```text
 src/
-├── components/ # Layout, shared UI components
+├── components/         # Layout, shared UI components
 ├── pages/
-│ ├── Home/ # Landing page
-│ ├── Nodes/ # Node listing
-│ ├── NodeDetail/ # Node detail view
-│ ├── Operations/ # Operations console
-│ ├── Insights/ # Insights & Analytics dashboard
-│ └── ControlConsole/ # Control console
+│   ├── Home/           # Landing page
+│   ├── Nodes/          # Node listing
+│   ├── NodeDetail/     # Node detail view
+│   ├── Operations/     # Operations console
+│   ├── Insights/       # Insights & Analytics dashboard
+│   └── ControlConsole/ # Control console
 ├── utils/
-│ └── mockNodes.ts # Mock data for nodes & telemetry
-└── App.tsx # App routes
+│   └── mockNodes.ts    # Mock data for nodes & telemetry
+└── App.tsx             # App routes
+```
 
 
 
