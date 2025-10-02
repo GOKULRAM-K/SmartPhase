@@ -2,7 +2,7 @@
 
 A **Smart Load Balancer & Monitoring Dashboard** for power distribution systems in Kerala.  
 Built with **React (Vite + TypeScript)**, **Material UI**, and **Recharts**.
-
+Need to update by this weekend for sure.
 ---
 
 ## 📊 Features
