@@ -1,6 +1,9 @@
 # ⚡ SmartPhase: AI-Powered IoT System for Dynamic Phase Balancing in Kerala’s Solar Grid
 
-![SmartPhase Logo](./assets/Logo.png)
+<p align="center">
+  <img src="./assets/Logo.png" alt="SmartPhase Logo" width="250"/>
+</p>
+
 
 > 🌞 Empowering Kerala’s solar future by eliminating phase imbalance with IoT, Edge Intelligence, and Smart Control.
 
