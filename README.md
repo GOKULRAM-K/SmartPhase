@@ -77,8 +77,6 @@ Auto + Manual with safe fallback and real-time alerts.
 ![Built With](https://img.shields.io/badge/Stack-IoT%20%7C%20FastAPI%20%7C%20React-blue?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-End--to--End%20Encryption-orange?style=for-the-badge)
 
-
-
 ---
 
 ## 🏗 System Architecture
@@ -105,6 +103,19 @@ ESP32 (house) → MQTT → Raspberry Pi (balancing algorithm) → FastAPI + Infl
   - Grafana (debugging) + React dashboard (judges)
 
 ---
+
+<details>
+<summary>📖 Click to view Algorithm Steps</summary>
+
+1. Collect current load of R, Y, B phases  
+2. Compute imbalance severity (VUF, neutral current)  
+3. Identify overloaded & underloaded phases  
+4. Switch selected houses using ESP32 relays  
+5. Verify switch via feedback loop  
+6. Ensure no new overload is created  
+
+</details>
+
 
 ## ⚙️ Balancing Algorithm
 
