@@ -182,20 +182,17 @@ npm start
   "solar_injection": 2.1
 }
 
-```
-
 ## 👥 Team SmartPhase
 
-| Name                  | Role                         | GitHub                                   | LinkedIn          |
-|-----------------------|------------------------------|------------------------------------------|---------------  --|
-| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](#)     |
+| Name                  | Role                         | GitHub                                   | LinkedIn                                      |
+|-----------------------|------------------------------|------------------------------------------|-----------------------------------------------|
+| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](#)                                 |
 | Gokul Ram K           | Software Lead                | [GitHub](https://github.com/GOKULRAM-K)  | [LinkedIn](https://www.linkedin.com/in/gokul-ram-k-277a6a308) |
-| Manju Varshikha S     | Software Developer           | [GitHub](#)                              | [LinkedIn](#)     |
-| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
-| Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
-| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
+| Manju Varshikha S     | Software Developer           | [GitHub](#)                              | [LinkedIn](#)                                 |
+| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
+| Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
+| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
 
----
 
 ## 📚 References
 
