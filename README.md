@@ -181,7 +181,7 @@ npm start
   "current": 4.2,
   "solar_injection": 2.1
 }
-
+```
 ## 👥 Team SmartPhase
 
 | Name                  | Role                         | GitHub                                   | LinkedIn                                      |
@@ -195,7 +195,7 @@ npm start
 
 
 ## 📚 References
-
+```
 - Kerala State Electricity Board (KSEB) Rooftop Solar Reports  
 - IEEE papers on Phase Balancing & VUF calculation  
 - MQTT, FastAPI, InfluxDB official documentation  
