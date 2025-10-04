@@ -107,8 +107,7 @@ ESP32 (house) → MQTT → Raspberry Pi (balancing algorithm) → FastAPI + Infl
 - PDF report export  
 
 **Screenshots / Mockups:**  
-![Dashboard Mockup](./assets/dashboard_mock.png)  
-![Before/After Chart](./assets/balance_chart.png)  
+![Dashboard Mockup](./assets/Dashboard.png)  
 
 ---
 
