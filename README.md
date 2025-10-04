@@ -120,9 +120,6 @@ ESP32 (house) → MQTT → Raspberry Pi (balancing algorithm) → FastAPI + Infl
 5. Dashboard updates → before/after load chart  
 6. Operator exports PDF report  
 
-**Demo GIF Placeholder:**  
-![Demo GIF](./assets/demo.gif)  
-
 ---
 
 ## 🌍 Business & Social Impact
@@ -189,14 +186,14 @@ npm start
 
 ## 👥 Team SmartPhase
 
-| Name                  | Role                         | GitHub/LinkedIn |
-|-----------------------|------------------------------|-----------------|
-| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     |
-| Gokul Ram K           | Software Lead                | [GitHub](#)     |
-| Manju Varshikha S     | Software Developer           | [GitHub](#)     |
-| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)     |
-| Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)     |
-| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)     |
+| Name                  | Role                         | GitHub                                   | LinkedIn          |
+|-----------------------|------------------------------|------------------------------------------|---------------  --|
+| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](#)     |
+| Gokul Ram K           | Software Lead                | [GitHub](https://github.com/GOKULRAM-K)  | [LinkedIn](https://www.linkedin.com/in/gokul-ram-k-277a6a308) |
+| Manju Varshikha S     | Software Developer           | [GitHub](#)                              | [LinkedIn](#)     |
+| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
+| Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
+| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)     |
 
 ---
 
