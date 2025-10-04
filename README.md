@@ -39,13 +39,27 @@ Utilities today try manual/static phase reconfiguration, but this fails under **
 We propose a **low-cost, scalable, IoT-based dynamic phase balancing system**.  
 Our innovation combines **sensors, relays, edge intelligence, and a smart dashboard** to continuously monitor and re-balance feeder phases.
 
-### ✅ Key Features
-- **Dynamic auto-balancing** of single-phase solar households across 3 phases  
-- **Edge controller (Raspberry Pi)** for local decision-making (no cloud dependency)  
-- **House node (ESP32)** with sensors + relay for real-time measurement & phase switching  
-- **Dashboard** for monitoring, manual override, and reporting  
-- **Auto + Manual modes** for operator flexibility  
-- **PDF report export** for analysis and decision-making  
+> 🚀 **Key Features**  
+> - Dynamic auto-balancing across R/Y/B phases  
+> - Edge controller (Raspberry Pi) → no cloud dependency  
+> - Secured communication, authorized access only  
+> - Operator Dashboard → live data, alerts, reports  
+> - Resilient Auto/Manual modes  
+
+---
+
+> 🔒 **Reliability & Security**  
+> - Fault tolerant → keeps running even if nodes fail  
+> - Resilient → self-recovery after interruptions  
+> - Full control with traceable actions  
+
+---
+
+> 🏗 **Engineering for the Future**  
+> - Modular → plug & play upgrades  
+> - Maintainable → easy sensor/relay swap  
+> - Scalable → from one feeder to state-wide  
+
 
 ---
 
