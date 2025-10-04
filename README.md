@@ -39,26 +39,44 @@ Utilities today try manual/static phase reconfiguration, but this fails under **
 We propose a **low-cost, scalable, IoT-based dynamic phase balancing system**.  
 Our innovation combines **sensors, relays, edge intelligence, and a smart dashboard** to continuously monitor and re-balance feeder phases.
 
-> 🚀 **Key Features**  
-> - Dynamic auto-balancing across R/Y/B phases  
-> - Edge controller (Raspberry Pi) → no cloud dependency  
-> - Secured communication, authorized access only  
-> - Operator Dashboard → live data, alerts, reports  
-> - Resilient Auto/Manual modes  
+> ⚡ **SmartPhase:** Balancing Kerala’s Solar Grid with AI + IoT  
+> _From imbalance to intelligence — reliable, secure, and scalable._
+
+## 🚀 Key Features
+
+🌀 **Dynamic Balancing**  
+Continuously shifts households between R/Y/B phases for perfect stability.  
+
+🧠 **Edge Intelligence**  
+Raspberry Pi runs real-time algorithm — no cloud dependency, ultra-fast.  
+
+🔐 **Secured Network**  
+Only authorized ESP32 + Pi connect. End-to-end encrypted.  
+
+📊 **Smart Dashboard**  
+Live monitoring, manual override, before/after charts, PDF reports.  
+
+⚡ **Resilient Modes**  
+Auto + Manual with safe fallback and real-time alerts.  
+
+## 🔒 Reliability & Security
+
+✅ **Fault Tolerance** – Survives node failures without grid disruption  
+✅ **Resilient** – Auto self-recovery from interruptions  
+✅ **Full Control** – Every switch action is logged + reversible  
 
 ---
 
-> 🔒 **Reliability & Security**  
-> - Fault tolerant → keeps running even if nodes fail  
-> - Resilient → self-recovery after interruptions  
-> - Full control with traceable actions  
+## 🏗️ Engineering Excellence
 
----
+🧩 **Modular** – Replace/upgrade nodes easily  
+🔧 **Maintainable** – Plug & play hardware (ESP32, relays, CT sensors)  
+🌍 **Scalable** – Works for 1 feeder or 1000 across Kerala  
 
-> 🏗 **Engineering for the Future**  
-> - Modular → plug & play upgrades  
-> - Maintainable → easy sensor/relay swap  
-> - Scalable → from one feeder to state-wide  
+![Status](https://img.shields.io/badge/Status-Prototype-green?style=for-the-badge)
+![Built With](https://img.shields.io/badge/Stack-IoT%20%7C%20FastAPI%20%7C%20React-blue?style=for-the-badge)
+![Security](https://img.shields.io/badge/Security-End--to--End%20Encryption-orange?style=for-the-badge)
+
 
 
 ---
