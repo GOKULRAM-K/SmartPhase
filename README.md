@@ -191,11 +191,12 @@ npm start
 
 | Name                  | Role                         | GitHub/LinkedIn |
 |-----------------------|------------------------------|-----------------|
-| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](#)     |
+| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     |
 | Gokul Ram K           | Software Lead                | [GitHub](#)     |
 | Manju Varshikha S     | Software Developer           | [GitHub](#)     |
+| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)     |
 | Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)     |
-| LOGESWARAR G          | IOT and Hardware Developer   | [GitHub](#)     |
+| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)     |
 
 ---
 
