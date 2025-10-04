@@ -9,11 +9,11 @@
 ---
 
 ## 🏷 Badges
+![ESP32](https://img.shields.io/badge/Hardware-ESP32-red)
+![Raspberry Pi](https://img.shields.io/badge/Hardware-RPi-yellow)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 ![MQTT](https://img.shields.io/badge/Protocol-MQTT-orange)
-![ESP32](https://img.shields.io/badge/Hardware-ESP32-red)
-![Raspberry Pi](https://img.shields.io/badge/Hardware-RPi-yellow)
 
 ---
 
