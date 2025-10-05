@@ -286,6 +286,8 @@ Each message has a unique topic structure, strict authentication, and timestamp 
 }
 ```
 
+</details>
+
 ## 👥 Team SmartPhase
 
 | Name                  | Role                         | GitHub                                   | LinkedIn                                      |
