@@ -229,12 +229,12 @@ npm start
 
 | Name                  | Role                         | GitHub                                   | LinkedIn                                      |
 |-----------------------|------------------------------|------------------------------------------|-----------------------------------------------|
-| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](#)                                 |
+| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](http://www.linkedin.com/in/varun-krishnan-r)                                 |
 | Gokul Ram K           | Software Lead                | [GitHub](https://github.com/GOKULRAM-K)  | [LinkedIn](https://www.linkedin.com/in/gokul-ram-k-277a6a308) |
 | Manju Varshikha S     | Software Developer           | [GitHub](#)                              | [LinkedIn](#)                                 |
-| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
+| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](https://github.com/raghav261205)                              | [LinkedIn](https://www.linkedin.com/in/raghav-s-332610288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)                                 |
 | Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
-| Logeswarar G          | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
+| Logeswarar G          | IOT and Hardware Developer   | [GitHub](https://github.com/logeswarar-g)                              | [LinkedIn](https://www.linkedin.com/in/logeswarar-g-a74b232b0)                                 |
 
 
 ## 📚 References
