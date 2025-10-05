@@ -214,16 +214,61 @@ npm install
 npm start
 ```
 
-## Sample MQTT Message
+## MQTT message from House -> PI
 ```text
 
 {
   "house_id": "H001",
+  "timestamp": "2025-10-04T14:25:10Z",
   "phase": "R",
   "voltage": 229.5,
   "current": 4.2,
-  "solar_injection": 2.1
+  "power_factor": 0.97,
+  "solar_injection": 2.1,
+  "status": "OK"
 }
+
+```
+
+## MQTT message/command from PI/Software (in manual control mode) -> ESP32
+```text
+
+{
+  "command_id": "CMD12345",
+  "house_id": "H001",
+  "action": "SWITCH_PHASE",
+  "target_phase": "B",
+  "issued_by": "Pi001",
+  "auth_token": "secure-hash-token",
+  "timestamp": "2025-10-04T14:25:12Z"
+}
+
+```
+
+## MQTT acknowledgements back to PI/Software from ESP32 nodes
+```text
+
+{
+  "command_id": "CMD12345",
+  "house_id": "H001",
+  "status": "SUCCESS",
+  "executed_phase": "B",
+  "timestamp": "2025-10-04T14:25:13Z"
+}
+
+```
+
+## Alerts and Faults
+```text
+
+{
+  "house_id": "H001",
+  "alert_type": "UNAUTHORIZED_ACCESS",
+  "severity": "HIGH",
+  "details": "Unknown device tried to join network",
+  "timestamp": "2025-10-04T14:26:00Z"
+}
+
 ```
 ## 👥 Team SmartPhase
 
