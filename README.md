@@ -214,9 +214,15 @@ npm install
 npm start
 ```
 
-## MQTT message from House -> PI
-```text
+## 📡 MQTT Message Formats
 
+We use **secure JSON-based MQTT communication** between House Nodes (ESP32), Raspberry Pi, and HQ Software.  
+Each message has a unique topic structure, strict authentication, and timestamp for traceability.  
+
+<details>
+<summary>🏠 House → Pi : Telemetry Message</summary>
+
+```json
 {
   "house_id": "H001",
   "timestamp": "2025-10-04T14:25:10Z",
@@ -227,12 +233,11 @@ npm start
   "solar_injection": 2.1,
   "status": "OK"
 }
-
 ```
 
-## MQTT message/command from PI/Software (in manual control mode) -> ESP32
-```text
-
+</details> <details> <summary>⚡ Pi / HQ → ESP32 : Control Command (Manual Mode)</summary>
+  
+```json
 {
   "command_id": "CMD12345",
   "house_id": "H001",
@@ -242,12 +247,11 @@ npm start
   "auth_token": "secure-hash-token",
   "timestamp": "2025-10-04T14:25:12Z"
 }
-
 ```
 
-## MQTT acknowledgements back to PI/Software from ESP32 nodes
-```text
+</details> <details> <summary>📬 ESP32 → Pi / HQ : Acknowledgment</summary>
 
+```json
 {
   "command_id": "CMD12345",
   "house_id": "H001",
@@ -255,21 +259,33 @@ npm start
   "executed_phase": "B",
   "timestamp": "2025-10-04T14:25:13Z"
 }
-
 ```
 
-## Alerts and Faults
-```text
+</details> <details> <summary>🚨 Alerts & Faults</summary>
 
+```json
 {
-  "house_id": "H001",
+  "node_id": "NA001",
   "alert_type": "UNAUTHORIZED_ACCESS",
   "severity": "HIGH",
   "details": "Unknown device tried to join network",
   "timestamp": "2025-10-04T14:26:00Z"
 }
-
 ```
+
+</details> <details> <summary>💓 Pi → HQ : Heartbeat / Status</summary>
+
+```json
+{
+  "pi_id": "Pi001",
+  "timestamp": "2025-10-04T14:27:00Z",
+  "connected_houses": ["H001", "H002", "H003"],
+  "cpu_usage": 42.5,
+  "memory_usage": 68.2,
+  "status": "ACTIVE"
+}
+```
+
 ## 👥 Team SmartPhase
 
 | Name                  | Role                         | GitHub                                   | LinkedIn                                      |
