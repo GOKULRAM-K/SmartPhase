@@ -5,7 +5,6 @@
 </p>
 
 > 🌞 Empowering Kerala’s solar future by eliminating phase imbalance with IoT, Edge Intelligence, and Smart Control.
-
 ---
 
 ## 🏷 Badges
