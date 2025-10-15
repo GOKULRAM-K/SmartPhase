@@ -1,5 +1,24 @@
-# ⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System
-### _An Intelligent, Scalable, and Secure Architecture for Next-Gen Power Grids_
+<!-- 🎯 PROJECT BANNER -->
+<p align="center">
+  <img src="docs/banner.png" alt="Smart Phase Balancing System" width="100%">
+</p>
+
+<h1 align="center">⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System</h1>
+<p align="center">
+  <b>Scalable | Secure | Sustainable | Smarter Power for the Future</b><br>
+  <i>An Intelligent, Hybrid IoT Architecture for Next-Generation Energy Management</i>
+</p>
+
+---
+
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-Prototype%20Ready-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Built for](https://img.shields.io/badge/Smart%20India%20Hackathon-2025-orange)
+![IoT](https://img.shields.io/badge/Category-Internet%20of%20Things-yellow)
+
+</div>
 
 ---
 
