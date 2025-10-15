@@ -1,6 +1,6 @@
 <!-- 🎯 PROJECT BANNER -->
 <p align="center">
-  <img src="assets/Logo.png" alt="Smart Phase Balancing System" width="100%">
+  <img src="assets/Logo.png" alt="Smart Phase Balancing System" width="45%">
 </p>
 
 <h1 align="center">⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System</h1>
@@ -24,216 +24,76 @@
 
 ## 🌍 Overview
 
-Our project introduces a **hybrid IoT-based architecture** designed to monitor, control, and balance transformer phases in real time — ensuring **efficiency, reliability, and cost-effectiveness** across both **urban and rural grids**.
+Kerala’s energy infrastructure is evolving — and with it comes the challenge of ensuring **efficient, balanced, and intelligent power distribution** across every region.  
+Our solution, the **Smart Phase Balancing and Hybrid IoT Power Distribution System**, redefines how transformers and homes communicate, coordinate, and optimize electricity delivery.
 
-This system integrates **smart hardware nodes**, **Raspberry Pi units**, and a **multi-layered data infrastructure** that communicates securely with a **central HQ server**.
+This project builds a **self-learning, hybrid IoT architecture** that connects every household node and transformer to a central intelligence layer — providing **real-time visibility**, **load balancing**, and **automated control** across both **urban and rural** grids.
 
-> ⚡ Built for scalability, designed for security, and optimized for real-time performance.
+It’s more than just monitoring — it’s about creating a power network that can *sense, decide, and act*.
 
 ---
 
-## ⚠️ Problem Statement
+> ⚡ **Built for Scalability. Designed for Security. Engineered for Real-Time Performance.**
 
-Electric power grids today face severe **phase imbalance and load inefficiency** due to:
-- Manual phase monitoring ⚙️  
-- Overloaded transformers and frequent outages 🔥  
-- Lack of real-time visibility and data-driven decision-making 📊  
-- High dependency on manual inspection and maintenance 👷  
+---
 
-Such inefficiencies lead to **energy loss, equipment stress, and service instability**, especially in regions with **varying network conditions** (dense cities vs rural areas).
+## 🎯 Why This Matters
+
+Kerala’s power grid spans a complex mix of **dense city networks, campuses, and rural terrains**.  
+While urban regions are data-rich, rural and hilly areas still lack connectivity — resulting in **phase imbalance, transformer overloads, and manual dependency.**
+
+Our system ensures that *no matter the terrain*, **every node, every transformer, and every watt of energy** is monitored, managed, and optimized.  
+This architecture directly supports **KSEB’s vision for a Smart, Connected Kerala**, integrating renewable energy and improving grid resilience.
+
+---
+
+### 🚀 What Makes It Different
+
+| Feature | Traditional Grid | Our Smart Grid |
+|----------|------------------|----------------|
+| Phase Monitoring | Manual, delayed | Real-time IoT sensing |
+| Control | Manual switchovers | Automated balancing logic |
+| Connectivity | Wired or single-channel | Hybrid (Cellular + LoRa + Wired) |
+| Data Handling | Limited local logging | State-wide data ingestion & analytics |
+| Scalability | Transformer-level | State-wide, modular, and scalable |
+| Security | Minimal | TLS + AES + Role-Based Control |
+
+> 🧠 *This isn’t just digitalization — it’s intelligence built into every transformer.*
 
 ---
 
 ## 💡 Core Objective
 
-To design a **scalable, secure, and cost-effective hybrid IoT system** that:
-- Automatically **detects and balances transformer loads** in real-time  
-- Enables **reliable communication** from every node to the HQ server  
-- Supports **urban, campus, and rural topologies** with adaptive connectivity  
-- Aligns with **Smart India’s vision of sustainable energy management** ⚡  
+Our primary goal is to design a **modular, scalable, and cost-efficient hybrid IoT ecosystem** that enables smart, automated, and secure energy distribution.
+
+### ✅ System Objectives
+
+- Detect **phase imbalance and transformer overloads** automatically in real time.  
+- Ensure **reliable communication** between every home node, transformer, and control center using hybrid connectivity.  
+- Optimize **energy flow and distribution efficiency** with autonomous local decision-making at the edge.  
+- Deliver **real-time dashboards and analytics** for monitoring, alerts, and performance insights.  
+- Maintain **data security and compliance** through encryption, authentication, and audit tracking.  
+- Support **urban, campus, and rural topologies** under one unified architecture.  
+- Align with the **Smart India Mission** and **KSEB’s modernization roadmap** for sustainable grid transformation.
 
 ---
 
-## 🧠 Vision & Design Philosophy
+### 🧩 Design Essence
 
-Modern power networks need more than monitoring — they need **coordination, adaptability, and intelligence at every layer**.  
-Our system is engineered with this mindset: every device, every node, and every decision point contributes to a more **responsive, resilient, and data-driven grid**.
+> **“Every transformer thinks. Every node communicates. Every decision optimizes the grid.”**
 
-At its core, the design follows **three guiding principles**:
-1. ⚙️ **Modularity:** Each layer — hardware, communication, software — operates independently yet integrates seamlessly.  
-2. 🧩 **Scalability:** Built to expand from a single transformer to a full-state energy ecosystem.  
-3. 🔒 **Security & Reliability:** Every data flow is encrypted, every command is verified, every component is monitored.
+Our design philosophy is grounded in three pillars:
 
-> “A grid that can think, react, and optimize — that’s the foundation of our design.”
+1. ⚙️ **Modularity** – Independent components (hardware, software, communication) that integrate seamlessly.  
+2. 🧠 **Intelligence** – Edge analytics and centralized data insights for predictive and preventive action.  
+3. 🔒 **Security & Reliability** – Multi-layer protection ensuring trusted and resilient energy communication.
 
 ---
 
-## 🔩 Hardware Architecture
+<p align="center">
+  <img src="assets/overview_diagram.png" width="70%" alt="System Overview">
+</p>
 
-Electricity distribution begins at the **transformer** and the **household connection** — our hardware design ensures that intelligence starts right there.
-
-### 🏠 Home Node Unit
-Each household connected to a transformer feeder is equipped with a **smart node module** capable of sensing, switching, and communicating in real time.
-
-**Key Components:**
-- ⚡ **Microcontroller (Arduino / ESP32):** Core processing unit handling sensor data and relay control.  
-- 🧲 **Current & Voltage Sensors:** Measure real-time consumption or generation (solar input).  
-- 🔄 **Three-Phase Relay:** Switches between phases dynamically based on transformer load or control signals.  
-- 📡 **Communication Interface:** Wired (RS-485) or wireless (Wi-Fi / LoRa) link to the transformer PI.
-
-**Functions:**
-- Continuously sense load and report to the **local PI controller**.  
-- Execute phase switching commands automatically or via PI instruction.  
-- Provide localized decision-making for **stability and load redistribution.**
-
-> 🧠 “Each home node is a micro decision-maker — a cell in the nervous system of a smarter grid.”
+> *Smart distribution starts at the transformer — but intelligence begins at every node.*
 
 ---
-
-### 🧠 Transformer PI Unit
-Installed at the transformer, this **Raspberry Pi–based controller** acts as the **local command center**.
-
-**Key Responsibilities:**
-- Aggregate data from all connected home nodes.  
-- Analyze power flow and detect phase imbalance.  
-- Issue switching commands to balance load dynamically.  
-- Communicate summarized data to the central HQ server.  
-
-**Integrated Capabilities:**
-- **Preprocessing:** Filters and aggregates data to reduce bandwidth load.  
-- **Computation:** Runs load-balancing algorithms and stability logic.  
-- **Communication:** Cellular IoT or LoRaWAN connectivity for uplink to HQ.  
-- **Metering:** Optional 3-phase power measurement (e.g., EM-10 / PZEM-004T).
-
-> “Where traditional transformers stop at distribution, our PI starts with intelligence.”
-
----
-
-## 🌐 Networking Architecture
-
-The network is the **spinal cord of this system** — carrying commands and telemetry securely from field to HQ.  
-Because not all locations share equal connectivity, our design adopts a **hybrid communication model** to ensure *every node has a voice*.
-
----
-
-### ⚡ 1️⃣ Dense Urban & Residential Clusters
-**Configuration:** Fully wired RS-485 between meters and transformer PI.  
-
-**Why:**
-- Short distances, minimal wiring cost  
-- Noise immunity against electrical interference  
-- High reliability (near 100% uptime)  
-- No radio congestion in Wi-Fi-dense environments  
-
-✅ **Goal:** Maximum reliability and accuracy in compact zones.  
-
----
-
-### 🏢 2️⃣ Campus or Multi-Feeder Networks
-**Configuration:** Local RS-485 per feeder + LoRa uplink to a central PI.  
-
-**Why:**
-- Covers 100–500 m clusters without messy cabling  
-- Local reliability (wired loop) with long-range LoRa uplink  
-- Easier expansion for new feeders or building clusters  
-
-✅ **Goal:** Balance local precision with scalable campus-wide control.  
-
----
-
-### 🌄 3️⃣ Rural or Widely Spaced Transformers
-**Configuration:** LoRa wireless nodes → Gateway PI → HQ uplink.  
-
-**Why:**
-- Long range (up to 10 km line-of-sight)  
-- Low power consumption (solar-supported possible)  
-- Minimal infrastructure required  
-- Split-core CTs allow non-invasive current measurement  
-
-✅ **Goal:** Reliable, long-range telemetry for remote rural grids.
-
----
-
-### 🧩 Connectivity Summary
-
-| Environment | Communication Mode | Range | Reliability | Cost | Ideal Use Case |
-|--------------|--------------------|--------|--------------|------|----------------|
-| Dense Urban | RS-485 Wired | < 100 m | ⭐⭐⭐⭐ | 💰 Low | Streets, housing colonies |
-| Campus / Mixed | LoRa + Wired Hybrid | 0.5–2 km | ⭐⭐⭐⭐ | 💰💰 Moderate | Institutional grids |
-| Rural | LoRa → Gateway | 1–10 km | ⭐⭐⭐ | 💰 Very Low | Villages, farmlands |
-
-> 🛰️ *Where there’s power, there’s connectivity — by design.*
-
----
-
-## ⚙️ Data & Intelligence Stack
-
-Beyond the physical layers, the system integrates a **multi-tiered digital ecosystem** — from edge processing to analytics — ensuring that every data point becomes actionable insight.
-
-### 🧾 Data Ingestion
-- Protocol: **MQTT over TLS** → Lightweight, secure device communication.  
-- Broker: **Apache Kafka / Redpanda** → High-throughput ingestion and buffering.  
-- Edge Processing: Local preprocessing at each PI minimizes data redundancy.
-
-### 💾 Data Storage
-- **TimescaleDB:** For high-frequency time-series sensor data.  
-- **PostgreSQL:** For configurations, user management, and metadata.  
-- **Data Lake (HDFS / NFS):** For raw and historical data archiving.
-
-### 📊 Data Analytics
-- **Real-Time:** Apache Storm detects anomalies and overloads dynamically.  
-- **Batch / Historical:** Apache Druid performs trend analysis and reports.  
-- **Visualization:** Grafana / Apache Superset provides dashboards, alerts, and reports.
-
-> 🔍 *From milliseconds to months — we analyze across time scales.*
-
----
-
-## 🔒 Security & Compliance Foundation
-
-Security isn’t an add-on — it’s embedded throughout the architecture.
-
-| Layer | Security Measure | Purpose |
-|--------|------------------|----------|
-| Communication | TLS 1.3 | Encrypts PI–HQ data streams |
-| Storage | AES-256 | Protects database and data lake assets |
-| Access | JWT + RBAC | Role-based authorization |
-| Network | VPN + Firewalls | Isolates internal systems |
-| Governance | Audit Logs | Tracks every configuration and control event |
-
-> 🛡️ *Secure by architecture, compliant by design.*
-
----
-
-## 🧭 Monitoring, Reliability & Maintenance
-
-- **System Health:** Monitored continuously via Prometheus + Grafana dashboards.  
-- **Logs & Events:** Centralized collection using ELK/EFK stacks.  
-- **Resilience:** Automatic backups and failover servers ensure uninterrupted operation.  
-- **Upgrades:** Modular rollout without service disruption.  
-
-> 🔁 “The grid never sleeps — neither does its monitoring.”
-
----
-
-## 🏗️ System Architecture
-
-```mermaid
-graph TD
-  A[🏠 Home Node] -->|RS-485 / Wi-Fi / LoRa| B[🧠 Transformer PI]
-  B -->|LoRa / Cellular| C[📡 Gateway PI]
-  C -->|MQTT over TLS| D[🏢 HQ Server]
-  D -->|Kafka Stream| E[(💾 Data Ingestion Layer)]
-  E --> F[(🧱 TimescaleDB + PostgreSQL)]
-  F --> G[(📈 Real-Time & Batch Analytics)]
-  G --> H[🖥️ Dashboard / Web Portal]
-  H --> I[👨‍💼 Government / Utility Officials]
-
-```
-
-🔍 Every data point is connected — every decision is informed.
-
-💬 “From sensors to servers, from voltage to visualization — this is how intelligence flows through our grid.”
-
----
-
