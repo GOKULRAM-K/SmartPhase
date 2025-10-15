@@ -1,6 +1,6 @@
 <!-- 🎯 PROJECT BANNER -->
 <p align="center">
-  <img src="docs/banner.png" alt="Smart Phase Balancing System" width="100%">
+  <img src="assets/Logo.png" alt="Smart Phase Balancing System" width="100%">
 </p>
 
 <h1 align="center">⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System</h1>
