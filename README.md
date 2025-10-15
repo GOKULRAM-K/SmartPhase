@@ -146,7 +146,7 @@ At the center of each transformer sits a **Raspberry Pi-based controller**, the 
 
 ---
 
-### 🧭 Gateway PI (Optional Layer)
+### 🧭 Gateway PI
 
 In low-connectivity areas, a designated **Gateway PI** collects data from nearby PIs via LoRa and pushes it to the control center using a stronger cellular link.
 
@@ -457,7 +457,7 @@ Every layer — from the field edge to the control dashboard — is engineered f
 |-------------|------|
 | **React.js** | Frontend framework for responsive, modular UI. |
 | **Grafana** | Real-time visualization and system monitoring. |
-| **Apache Superset (Optional)** | Advanced data analytics and reporting tool. |
+| **Apache Superset** | Advanced data analytics and reporting tool. |
 | **Prometheus** | Collects metrics from all running services. |
 
 ---
