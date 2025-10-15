@@ -1,344 +1,191 @@
-# ⚡ SmartPhase: AI-Powered IoT System for Dynamic Phase Balancing in Kerala’s Solar Grid
-
-<p align="center">
-  <img src="./assets/Logo.png" alt="SmartPhase Logo" width="250"/>
-</p>
-
-> 🌞 Empowering Kerala’s solar future by eliminating phase imbalance with IoT, Edge Intelligence, and Smart Control.
----
-
-## 🏷 Badges
-![ESP32](https://img.shields.io/badge/Hardware-ESP32-red)
-![Raspberry Pi](https://img.shields.io/badge/Hardware-RPi-yellow)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
-![MQTT](https://img.shields.io/badge/Protocol-MQTT-orange)
+# ⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System
+### _An Intelligent, Scalable, and Secure Architecture for Next-Gen Power Grids_
 
 ---
 
-## 📌 Problem Statement
+## 🌍 Overview
 
-Kerala has installed more than **1500 MW of rooftop solar**, most of which are small (<5 kW) single-phase systems connected to low-voltage feeders.  
-This leads to **phase imbalance** across R, Y, B lines, creating multiple challenges:
+Our project introduces a **hybrid IoT-based architecture** designed to monitor, control, and balance transformer phases in real time — ensuring **efficiency, reliability, and cost-effectiveness** across both **urban and rural grids**.
 
-- ⚠️ Uneven voltage profiles  
-- ⚠️ Neutral current heating and transformer stress  
-- ⚠️ Reduced rooftop solar hosting capacity  
-- ⚠️ Poor power quality and consumer dissatisfaction  
+This system integrates **smart hardware nodes**, **Raspberry Pi units**, and a **multi-layered data infrastructure** that communicates securely with a **central HQ server**.
 
-Utilities today try manual/static phase reconfiguration, but this fails under **dynamic load and solar injection variations** (morning demand, noon solar injection, evening peak).  
-
-**Visual:**  
-![Problem Flowchart](./assets/problem_chart.png)  
+> ⚡ Built for scalability, designed for security, and optimized for real-time performance.
 
 ---
 
-## 🚀 Our Solution: SmartPhase
+## ⚠️ Problem Statement
 
-We propose a **low-cost, scalable, IoT-based dynamic phase balancing system**.  
-Our innovation combines **sensors, relays, edge intelligence, and a smart dashboard** to continuously monitor and re-balance feeder phases.
+Electric power grids today face severe **phase imbalance and load inefficiency** due to:
+- Manual phase monitoring ⚙️  
+- Overloaded transformers and frequent outages 🔥  
+- Lack of real-time visibility and data-driven decision-making 📊  
+- High dependency on manual inspection and maintenance 👷  
 
-> ⚡ **SmartPhase:** Balancing Kerala’s Solar Grid with AI + IoT  
-> _From imbalance to intelligence — reliable, secure, and scalable._
-
-## 🚀 Key Features
-
-🌀 **Dynamic Balancing**  
-Continuously shifts households between R/Y/B phases for perfect stability.  
-
-🧠 **Edge Intelligence**  
-Raspberry Pi runs real-time algorithm — no cloud dependency, ultra-fast.  
-
-🔐 **Secured Network**  
-Only authorized ESP32 + Pi connect. End-to-end encrypted.  
-
-📊 **Smart Dashboard**  
-Live monitoring, manual override, before/after charts, PDF reports.  
-
-⚡ **Resilient Modes**  
-Auto + Manual with safe fallback and real-time alerts.  
-
-## 🔒 Reliability & Security
-
-✅ **Fault Tolerance** – Survives node failures without grid disruption  
-✅ **Resilient** – Auto self-recovery from interruptions  
-✅ **Full Control** – Every switch action is logged + reversible  
+Such inefficiencies lead to **energy loss, equipment stress, and service instability**, especially in regions with **varying network conditions** (dense cities vs rural areas).
 
 ---
 
-## 🏗️ Engineering Excellence
+## 💡 Core Objective
 
-🧩 **Modular** – Replace/upgrade nodes easily  
-🔧 **Maintainable** – Plug & play hardware (ESP32, relays, CT sensors)  
-🌍 **Scalable** – Works for 1 feeder or 1000 across Kerala  
-
-![Status](https://img.shields.io/badge/Status-Prototype-green?style=for-the-badge)
-![Built With](https://img.shields.io/badge/Stack-IoT%20%7C%20FastAPI%20%7C%20React-blue?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-End--to--End%20Encryption-orange?style=for-the-badge)
+To design a **scalable, secure, and cost-effective hybrid IoT system** that:
+- Automatically **detects and balances transformer loads** in real-time  
+- Enables **reliable communication** from every node to the HQ server  
+- Supports **urban, campus, and rural topologies** with adaptive connectivity  
+- Aligns with **Smart India’s vision of sustainable energy management** ⚡  
 
 ---
 
-## 🏗 System Architecture
+## 🔁 PI → HQ Server Connectivity Plan
 
-![System Architecture](./assets/architecture.png)
+### 🛰️ Cellular IoT Overview
 
-**Data Flow:**  
-ESP32 (house) → MQTT → Raspberry Pi (balancing algorithm) → FastAPI + InfluxDB → React Dashboard  
-
-### Components:
-- **House Node (ESP32):**  
-  - Measures voltage/current via CT + voltage sensors  
-  - Executes relay switching to change phase (R → Y → B)  
-  - Communicates with Pi via MQTT  
-
-- **Transformer Node (Raspberry Pi):**  
-  - Receives data from ESP32 nodes  
-  - Runs **balancing algorithm** to detect overload/underload  
-  - Sends switching commands to selected ESP32 nodes  
-
-- **Control Center (Server / Laptop):**  
-  - FastAPI backend for data & API layer  
-  - InfluxDB for time-series telemetry  
-  - Grafana (debugging) + React dashboard (judges)
+- Cellular IoT (NB-IoT / LTE-M / 5G) is widely used in **smart meter grids** across India.
+- Government bodies can **partner with telecom providers** for **IoT SIMs** with minimal monthly cost.
+- Estimated cost: **₹20–₹50 per month per PI**, depending on data usage.
 
 ---
 
-<details>
-<summary>📖 Click to view Algorithm Steps</summary>
+### 🔹 **1️⃣ Cellular IoT (NB-IoT / LTE-M / 5G)** – _High Connectivity Areas_
 
-1. Collect current load of R, Y, B phases  
-2. Compute imbalance severity (VUF, neutral current)  
-3. Identify overloaded & underloaded phases  
-4. Switch selected houses using ESP32 relays  
-5. Verify switch via feedback loop  
-6. Ensure no new overload is created  
+✅ **Where:** Cities, towns, and regions with strong cellular tower coverage  
+✅ **How it works:**
+- Direct communication from each **PI → HQ Server**
+- Real-time data transmission for instant monitoring and control
+- Leverages **existing telecom infrastructure**, keeping costs low
+- **Minimal latency**, enabling faster switching and alerts
 
-</details>
+---
 
+### 🔹 **2️⃣ LoRaWAN Mesh + Cellular IoT Gateway** – _Low Connectivity Areas_
 
-## ⚙️ Balancing Algorithm
+✅ **Where:** Semi-urban or rural localities with weak or inconsistent cellular signals  
+✅ **How it works:**
+- PIs with weak signals send their data through a **LoRaWAN mesh** to a nearby **gateway PI**
+- The **gateway PI** aggregates and transmits the combined data to HQ using **Cellular IoT**
+- Reduces total number of SIM cards required — lowering overall operational costs  
+- Ensures **reliable data reporting** even from remote clusters
 
-```text
-1. Collect current load of R, Y, B phases from ESP32 sensors.
-2. Calculate imbalance severity using Voltage Unbalance Factor (VUF) and neutral current.
-3. Identify overloaded phase and underloaded phase.
-4. Select candidate households (with solar injection) connected to overloaded phase.
-5. Switch them to underloaded phase using ESP32 relay.
-6. Verify switch via feedback from ESP32.
-7. Ensure no new phase becomes overloaded.
-8. Update dashboard with before/after data.
+📡 **Key Benefit:** “One gateway, multiple PIs” — scalable and cost-efficient.
+
+---
+
+### 🔹 **3️⃣ Wired Connections** – _Extremely Remote or No-Internet Areas_
+
+✅ **Where:** Very remote regions with **no cellular or internet coverage**  
+✅ **How it works:**
+- Uses **wired RS-485 or Ethernet connections** between local PIs and HQ
+- Deployed only in rare cases to ensure **full network coverage**
+- Keeps infrastructure costs minimal by leveraging **existing power line routes**
+
+---
+
+> ⚙️ **Hybrid Advantage:**  
+> This three-tier architecture ensures **100% coverage** — from dense cities to isolated villages — while maintaining **low cost, high reliability, and full scalability**.
+
+---
+
+## 🧱 **Proposed Solution**
+
+Our architecture is built in **modular layers**, ensuring **efficiency, scalability, and on-premise data control**.  
+Each layer is optimized for a specific role in the data lifecycle — from ingestion to visualization.
+
+---
+
+### 🔸 1️⃣ Data Ingestion Layer
+
+- **Protocol:** `MQTT over TLS` — lightweight, encrypted, and secure communication between PIs and server.  
+- **Broker:** `Apache Kafka` or `Redpanda` — for high-throughput, low-latency message ingestion.  
+  > Acts as a central **message queue**, ensuring reliability, buffering spikes, and preventing data loss.  
+- **Edge Processing:**  
+  - Each PI performs local preprocessing, aggregation, and buffering.  
+  - Reduces network congestion and ensures graceful handling of outages.  
+
+---
+
+### 🔸 2️⃣ Data Storage Layer
+
+- **Time-Series Database:** `TimescaleDB` — optimized for high-frequency sensor data, quick reads, and historical queries.  
+- **Relational Database:** `PostgreSQL` — manages configurations, user accounts, access roles, and metadata.  
+- **Data Lake (Optional):**  
+  - `HDFS` or `NFS` for long-term, raw data archival.  
+  - Enables **historical analytics** (5–10 years).  
+  - Cost-effective on-premise storage.
+
+---
+
+### 🔸 3️⃣ Data Processing & Analytics Layer
+
+- **Real-Time Analytics:** `Apache Storm` — detects overloads, phase imbalance, and anomalies in milliseconds.  
+- **Batch Analytics:** `Apache Druid` — performs historical trend analysis and generates predictive insights.  
+
+⚡ *Result:* Instant detection, long-term forecasting, and continuous system optimization.
+
+---
+
+### 🔸 4️⃣ API & Integration Layer
+
+- **API Gateway:** `NGINX` — lightweight, secure API routing and request handling.  
+- **Authentication:** `JWT + RBAC` — simple, role-based authorization with tokenized security.  
+- **Integration:**  
+  - Connects seamlessly to other **government or smart-grid systems** via `MQTT` or `REST APIs`.  
+  - Supports **scalability and interoperability** across multiple utility networks.
+
+---
+
+### 🔸 5️⃣ Dashboard / Website Module
+
+- **Frontend:** `React.js` or `Vue.js` — for an interactive and responsive web dashboard.  
+- **Visualization:** `Grafana` or `Apache Superset` — for real-time charts, transformer maps, and alerts.  
+- **Control Panel:**  
+  - Government officials can monitor, control, and receive automated notifications.  
+  - Supports **manual override, phase switching, and system audit logs.**
+- **Security:** Role-based access + Multi-Factor Authentication (MFA).
+
+---
+
+### 🔸 6️⃣ Security & Compliance
+
+- **Encryption:**  
+  - `TLS 1.2/1.3` — Encrypts all data in transit between PIs, gateways, and HQ.  
+  - `AES-256` — Encrypts all data stored in databases and data lakes.  
+- **Network Isolation:** Private LAN + VPN + Firewalls for restricted data flow.  
+- **Audit Logging:** Tracks every user action, configuration change, and system command.  
+- **Compliance:** Adheres to **National/State IT Security Policies** for energy infrastructure.
+
+---
+
+### 🔸 7️⃣ Monitoring & Maintenance
+
+- **System Metrics:** `Prometheus + Grafana` for real-time server health, ingestion rates, and load.  
+- **Central Logging:** `ELK/EFK Stack` for log aggregation, visualization, and fault tracing.  
+- **Backup & Recovery:**  
+  - Automated daily/weekly backups.  
+  - Redundant on-premise storage and failover servers to ensure **zero downtime**.
+
+---
+
+> 🧠 **Key Takeaway:**  
+> The proposed solution delivers a **smart, self-healing grid** with full visibility — ensuring energy efficiency, data security, and real-time control under one unified architecture.
+
+---
+
+## 🖥️ Architecture Preview (Optional Add Below)
+
+```mermaid
+graph TD
+  A[House Node] --> B[Transformer PI]
+  B --> C[Gateway PI]
+  C --> D[HQ Server]
+  D --> E[Analytics Layer]
+  D --> F[Dashboard / Control Panel]
+
 ```
 
-## 💻 Tech Stack
+### 🪄 **Tips for you when uploading to GitHub**
+- Add a **banner image** (e.g., `docs/banner.png`) before the title.  
+- Add your **team name + project logo** at the top corner of the banner.  
+- Use the above Mermaid diagram (GitHub supports it natively now).  
+- Include subtle color emojis and spacing — keep each section short and scannable.  
 
-- **Hardware:** ESP32, Raspberry Pi 4, CT sensors, relays  
-- **Protocols:** MQTT, HTTP/REST  
-- **Backend:** FastAPI, Mosquitto MQTT Broker, InfluxDB  
-- **Frontend:** React + TypeScript, mqtt.js, jsPDF  
-- **Visualization:** Grafana (debug), custom React dashboard  
-
----
-
-## 📊 Dashboard Highlights
-
-- Real-time feeder monitoring (R/Y/B load)  
-- Kerala map with feeder nodes  
-- Auto vs Manual toggle  
-- Manual phase switch control  
-- Before/After balancing comparison charts  
-- PDF report export  
-
-**Screenshots / Mockups:**  
-![Dashboard Mockup](./assets/Dashboard.png)  
-
----
-
-## 🎬 Demo Walkthrough
-
-1. Morning → R phase overloaded  
-2. Pi detects imbalance from sensor data  
-3. Algorithm selects 2 solar houses from R → switches to B  
-4. ESP32 executes relay switch + sends confirmation  
-5. Dashboard updates → before/after load chart  
-6. Operator exports PDF report  
-
----
-
-## 🌍 Business & Social Impact
-
-**Utility Benefits:**  
-- +20% rooftop solar hosting capacity  
-- Reduced transformer failures → lower O&M costs  
-
-**Consumer Benefits:**  
-- Stable voltage → fewer outages  
-- Real-time notifications & reports  
-
-**Kerala & Beyond:**  
-- Supports renewable adoption at scale  
-- Aligns with **UN SDGs**:  
-  - SDG 7: Affordable & Clean Energy  
-  - SDG 9: Infrastructure Innovation  
-  - SDG 11: Sustainable Cities  
-  - SDG 13: Climate Action  
-
-> "Every 1% reduction in phase imbalance can extend transformer life by 5 years."
-
----
-
-## 🔮 Future Scope
-
-- Machine Learning for predictive phase balancing  
-- Integration with EV charging + battery storage  
-- Blockchain for peer-to-peer solar energy trading  
-- Scaling to 11kV feeders and other states  
-
----
-
-## 🛠 Installation & Usage
-
-```bash
-# Clone repository
-git clone https://github.com/your-repo/smartphase.git
-cd smartphase
-
-# Backend setup
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-
-# Frontend setup
-cd frontend
-npm install
-npm start
-```
-
-## 📡 MQTT Message Formats
-
-We use **secure JSON-based MQTT communication** between House Nodes (ESP32), Raspberry Pi, and HQ Software.  
-Each message has a unique topic structure, strict authentication, and timestamp for traceability.  
-
-<details>
-<summary>🏠 House → Pi : Telemetry Message</summary>
-
-```json
-{
-  "house_id": "H001",
-  "timestamp": "2025-10-04T14:25:10Z",
-  "phase": "R",
-  "voltage": 229.5,
-  "current": 4.2,
-  "power_factor": 0.97,
-  "solar_injection": 2.1,
-  "status": "OK"
-}
-```
-
-</details> <details> <summary>⚡ Pi / HQ → ESP32 : Control Command (Manual Mode)</summary>
-  
-```json
-{
-  "command_id": "CMD12345",
-  "house_id": "H001",
-  "action": "SWITCH_PHASE",
-  "target_phase": "B",
-  "issued_by": "Pi001",
-  "auth_token": "secure-hash-token",
-  "timestamp": "2025-10-04T14:25:12Z"
-}
-```
-
-</details> <details> <summary>📬 ESP32 → Pi / HQ : Acknowledgment</summary>
-
-```json
-{
-  "command_id": "CMD12345",
-  "house_id": "H001",
-  "status": "SUCCESS",
-  "executed_phase": "B",
-  "timestamp": "2025-10-04T14:25:13Z"
-}
-```
-
-</details> <details> <summary>🚨 Alerts & Faults</summary>
-
-```json
-{
-  "node_id": "NA001",
-  "alert_type": "UNAUTHORIZED_ACCESS",
-  "severity": "HIGH",
-  "details": "Unknown device tried to join network",
-  "timestamp": "2025-10-04T14:26:00Z"
-}
-```
-
-</details> <details> <summary>💓 Pi → HQ : Heartbeat / Status</summary>
-
-```json
-{
-  "pi_id": "Pi001",
-  "timestamp": "2025-10-04T14:27:00Z",
-  "connected_houses": ["H001", "H002", "H003"],
-  "cpu_usage": 42.5,
-  "memory_usage": 68.2,
-  "status": "ACTIVE"
-}
-```
-
-</details>
-
-## 👥 Team SmartPhase
-
-| Name                  | Role                         | GitHub                                   | LinkedIn                                      |
-|-----------------------|------------------------------|------------------------------------------|-----------------------------------------------|
-| Varun Krishnan R      | IOT and Hardware Lead        | [GitHub](https://github.com/halofie)     | [LinkedIn](http://www.linkedin.com/in/varun-krishnan-r)                                 |
-| Gokul Ram K           | Software Lead                | [GitHub](https://github.com/GOKULRAM-K)  | [LinkedIn](https://www.linkedin.com/in/gokul-ram-k-277a6a308) |
-| Manju Varshikha S     | Software Developer           | [GitHub](#)                              | [LinkedIn](#)                                 |
-| Raghav Sivakumar      | IOT and Hardware Developer   | [GitHub](https://github.com/raghav261205)                              | [LinkedIn](https://www.linkedin.com/in/raghav-s-332610288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)                                 |
-| Karthikeyan Arun      | IOT and Hardware Developer   | [GitHub](#)                              | [LinkedIn](#)                                 |
-| Logeswarar G          | IOT and Hardware Developer   | [GitHub](https://github.com/logeswarar-g)                              | [LinkedIn](https://www.linkedin.com/in/logeswarar-g-a74b232b0)                                 |
-
-
-## 📚 References
-```
-- Kerala State Electricity Board (KSEB) Rooftop Solar Reports  
-- IEEE papers on Phase Balancing & VUF calculation  
-- MQTT, FastAPI, InfluxDB official documentation  
-- SCT-013 & ZMPT sensor datasheets  
-
----
-
-## SmartPhase is **not just a prototype** — it is a **deployable, scalable, low-cost solution** for Kerala’s distribution utilities.  
-## With **36-hour hackathon readiness** and **real-world impact**, we aim to **set the benchmark** for smart energy solutions at SIH 2025.
-
-
----
-
-## ⚙️ Getting Started
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/GOKULRAM-K/Kerala_Load_Balancer.git
-cd Kerala_Load_Balancer
-```
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
-3. Run locally
-```bash
-npm run dev
-```
-The app will be available at http://localhost:5173
-
-📦 Build for Production
-```bash
-npm run build
-npm run preview
-```
-
-
-
-
+Would you like me to **continue this README from here (Hardware → Networking → Microcontrollers)** using the same visually polished and creative style?  
+It’ll complete your entire README till “Future Scope” — fully SIH-presentation ready.
