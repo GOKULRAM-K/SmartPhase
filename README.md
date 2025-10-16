@@ -551,12 +551,6 @@ Our project aligns with multiple **United Nations Sustainable Development Goals 
 
 ---
 
-<p align="center">
-  <img src="assets/sdg_alignment.png" width="70%" alt="Sustainability & SDG Alignment">
-</p>
-
----
-
 ## 👥 12. Team & Credits
 
 Behind every system of intelligence lies a team of dedication.  
