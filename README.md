@@ -564,8 +564,8 @@ Our group blends expertise from **electronics, computer science, and energy engi
 
 | Role | Name | Responsibility | Email ID |
 |------|------|----------------|-----------|
-| **Team Lead** | Gokul Ram K | System Architecture, Software Design, Integration | gokulram.k2023@vitstudent.ac.in |
-| **Hardware Engineer** | Varun Krishnan R | Home Node & Transformer Module Design | varun.krishnan2023@vitstudent.ac.in |
+| **Team Lead** | Gokul Ram K | System Architecture, Software Design, Integration, API Development, and Data Visualization | gokulram.k2023@vitstudent.ac.in |
+| **Hardware Engineer** | Varun Krishnan R | Home Node & Transformer Module Design & Integration | varun.krishnan2023@vitstudent.ac.in |
 | **Networking Specialist** | Manju Varshikha S | Home Node Design, IoT Connectivity, and Communication Layer Implementation | manjuvarshikha.s2023@vitstudent.ac.in |
 | **Software Developer** | Raghav Sivakumar | Central Dashboard, API Development, and Data Visualization | raghav.sivakumar2023@vitstudent.ac.in |
 | **Software Developer** | Logeswarar G | Data Security, Encryption, and Real-Time Monitoring Modules | logeswarar.2023@vitstudent.ac.in |
