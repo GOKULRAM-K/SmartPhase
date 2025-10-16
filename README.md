@@ -91,7 +91,7 @@ Our design philosophy is grounded in three pillars:
 ---
 
 <p align="center">
-  <img src="assets/Architecture.png" width="30%" alt="System Overview">
+  <img src="assets/Architecture.png" width="80%" alt="System Overview">
 </p>
 
 > *Smart distribution starts at the transformer — but intelligence begins at every node.*
@@ -247,6 +247,10 @@ Our software architecture is modular, secure, and horizontally scalable — desi
 > Control, visualize, and act — all from a single unified interface.
 
 ---
+
+<p align="center">
+  <img src="assets/Dashboard.png" width="80%" alt="System Overview">
+</p>
 
 > 💬 *From field data to decision dashboards — intelligence flows seamlessly through every layer.*
 
@@ -572,15 +576,7 @@ Our group blends expertise from **electronics, computer science, and energy engi
 
 ---
 
-## ⚖️ 13. License
-
-```text
-Licensed under the MIT License.  
-You are free to use, modify, and distribute this project, provided proper attribution is given.  
-(c) 2025 Smart Grid Research Team – Kerala.
-```
-
-## 📞 14. Contact & Outreach
+## 📞 13. Contact & Outreach
 
 For collaborations, pilot deployments, or research partnerships with **KSEB** and other state electricity boards, please reach out to us:
 
