@@ -91,7 +91,7 @@ Our design philosophy is grounded in three pillars:
 ---
 
 <p align="center">
-  <img src="assets/overview_diagram.png" width="30%" alt="System Overview">
+  <img src="assets/Architecture.png" width="30%" alt="System Overview">
 </p>
 
 > *Smart distribution starts at the transformer — but intelligence begins at every node.*
@@ -156,10 +156,6 @@ In low-connectivity areas, a designated **Gateway PI** collects data from nearby
 
 ---
 
-<p align="center">
-  <img src="assets/hardware_architecture.png" width="75%" alt="Hardware Architecture">
-</p>
-
 > *Hardware built for field reality — rugged, scalable, and ready for automation.*
 
 ---
@@ -207,12 +203,6 @@ Our design follows a **Hybrid IoT Connectivity Model**, ensuring every transform
 
 ---
 
-<p align="center">
-  <img src="assets/networking_architecture.png" width="75%" alt="Communication Architecture">
-</p>
-
----
-
 ## ⚙️ 6. Software & Data Architecture
 
 Beneath the field layer lies the **digital intelligence stack** — the system’s analytical brain that transforms raw energy readings into actionable insights.
@@ -255,12 +245,6 @@ Our software architecture is modular, secure, and horizontally scalable — desi
 - **Communication:** REST and MQTT APIs for real-time control and data sync.  
 
 > Control, visualize, and act — all from a single unified interface.
-
----
-
-<p align="center">
-  <img src="assets/software_architecture.png" width="75%" alt="Software Architecture Diagram">
-</p>
 
 ---
 
@@ -332,10 +316,6 @@ Our design aligns with key **government and industry-grade security frameworks**
 By adhering to these, the system guarantees **national-level cybersecurity readiness** while maintaining local deployment feasibility.
 
 ---
-
-<p align="center">
-  <img src="assets/security_framework.png" width="70%" alt="Security Framework">
-</p>
 
 > *Power you can trust — secured by design, resilient by architecture.*
 
@@ -412,10 +392,6 @@ To ensure long-term traceability and analytics potential, the system retains and
 This approach ensures **cost-efficiency, scalability, and analytical depth** — even over decades of operation.
 
 ---
-
-<p align="center">
-  <img src="assets/monitoring_architecture.png" width="75%" alt="Monitoring Architecture Diagram">
-</p>
 
 > *Reliability isn’t achieved by redundancy alone — it’s designed into every process.*
 
@@ -508,10 +484,6 @@ Every layer — from the field edge to the control dashboard — is engineered f
 
 ---
 
-<p align="center">
-  <img src="assets/software_stack.png" width="80%" alt="Software Stack Diagram">
-</p>
-
 > *An end-to-end software ecosystem — open, secure, and built for scale.*
 
 ---
@@ -586,22 +558,17 @@ Our project aligns with multiple **United Nations Sustainable Development Goals 
 Behind every system of intelligence lies a team of dedication.  
 Our group blends expertise from **electronics, computer science, and energy engineering** — united by one vision: **to make Kerala’s power grid smarter, stronger, and sustainable.**
 
-| Role | Name | Responsibility |
-|------|------|----------------|
-| **Team Lead** | [Gokul Ram K] | System Architecture, Software Design, Integration |
-| **Hardware Engineer** | [Varun Krishnan R] | Home Node & Transformer Module Design |
-| **Networking Specialist** | [Manju Varshikha S] | Home Node Design, IoT Connectivity, and Communication Layer Implementation |
-| **Software Developer** | [Raghav Sivakumar] | Central Dashboard, API Development, and Data Visualization |
-| **Software Developer** | [Logeswarar G] | Data Security, Encryption, and Real-Time Monitoring Modules |
-| **Security & Data Analyst** | [Karthikeyan Arun] | Data Validation, Threat Analysis, and System Documentation |
+| Role | Name | Responsibility | Email ID |
+|------|------|----------------|-----------|
+| **Team Lead** | Gokul Ram K | System Architecture, Software Design, Integration | gokulram.k2023@vitstudent.ac.in |
+| **Hardware Engineer** | Varun Krishnan R | Home Node & Transformer Module Design | varun.krishnan2023@vitstudent.ac.in |
+| **Networking Specialist** | Manju Varshikha S | Home Node Design, IoT Connectivity, and Communication Layer Implementation | manjuvarshikha.s2023@vitstudent.ac.in |
+| **Software Developer** | Raghav Sivakumar | Central Dashboard, API Development, and Data Visualization | raghav.sivakumar2023@vitstudent.ac.in |
+| **Software Developer** | Logeswarar G | Data Security, Encryption, and Real-Time Monitoring Modules | logeswarar.2023@vitstudent.ac.in |
+| **Security & Data Analyst** | Karthikeyan Arun | Data Validation, Threat Analysis, and System Documentation | Karthikeyan.arun2023@vitstudent.ac.in |
 
 > 💡 *Innovation is teamwork — and our team powers innovation.*
 
----
-
-<p align="center">
-  <img src="assets/team_collab.png" width="60%" alt="Team Collaboration">
-</p>
 
 ---
 
@@ -627,7 +594,7 @@ For collaborations, pilot deployments, or research partnerships with **KSEB** an
 ---
 
 <p align="center">
-  <img src="assets/footer_logo.png" width="35%" alt="Project Footer Logo">
+  <img src="assets/Logo.png" width="35%" alt="Project Footer Logo">
 </p>
 
 <h3 align="center">⚡ Smart Grid. Smarter Kerala. ⚡</h3>
