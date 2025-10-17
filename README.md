@@ -572,14 +572,19 @@ Our group blends expertise from **electronics, computer science, and energy engi
 
 ## 📞 13. Contact & Outreach
 
-For collaborations, pilot deployments, or research partnerships with **KSEB** and other state electricity boards, please reach out to us:
-
 ---
 
 **Organization:** Smart India Hackathon (Government of Kerala)  
 **Institution:** [Vellore Institute of Technology, Chennai]  
 **Email:** [gokulram.k2023@vitstudent.ac.in]  
-**Location:** Chennai, India  
+**Location:** Chennai, India 
+
+<p align="center">
+  <img src="assets/Demo Works.jpg" width="35%" alt="Project Footer Logo">
+</p>
+
+<h4 align = "center"> Our Demo Work in VIT - Round 2 (Competed Against 850+ teams and made it to TOP 30 after 2 internal rounds!!) </h4>
+<H4 align= "center" > The Only Team moving to National Level Competition in Our PS: 25064 </H4>
 
 ---
 
