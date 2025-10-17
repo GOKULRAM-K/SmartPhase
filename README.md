@@ -580,7 +580,7 @@ Our group blends expertise from **electronics, computer science, and energy engi
 **Location:** Chennai, India 
 
 <p align="center">
-  <img src="assets/Demo Works.jpg" width="35%" alt="Project Footer Logo">
+  <img src="assets/Demo Works.jpg" width="45%" alt="Project Footer Logo">
 </p>
 
 <h4 align = "center"> Our Demo Work in VIT - Round 2 (Competed Against 850+ teams and made it to TOP 30 after 2 internal rounds!!) </h4>
@@ -589,7 +589,7 @@ Our group blends expertise from **electronics, computer science, and energy engi
 ---
 
 <p align="center">
-  <img src="assets/Logo.png" width="35%" alt="Project Footer Logo">
+  <img src="assets/Logo.png" width="25%" alt="Project Footer Logo">
 </p>
 
 <h3 align="center">⚡ Smart Grid. Smarter Kerala. ⚡</h3>
