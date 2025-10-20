@@ -570,13 +570,13 @@ Our group blends expertise from **electronics, computer science, and energy engi
 
 ---
 
-## 📞 13. Contact & Outreach
+## 📞 13. Contact:
 
 ---
 
 **Organization:** Smart India Hackathon (Government of Kerala)  
-**Institution:** [Vellore Institute of Technology, Chennai]  
-**Email:** [gokulram.k2023@vitstudent.ac.in]  
+**Institution:** Vellore Institute of Technology, Chennai
+**Email:** gokulram.k2023@vitstudent.ac.in
 **Location:** Chennai, India 
 
 <p align="center">
