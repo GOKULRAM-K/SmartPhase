@@ -595,7 +595,7 @@ Our group blends expertise from **electronics, computer science, and energy engi
 <h3 align="center">⚡ Smart Grid. Smarter Kerala. ⚡</h3>
 
 <p align="center">
-  <i>Building the backbone of a sustainable energy future — one transformer at a time.</i>
+  <i>Building the backbone of a sustainable energy future — one transformer at a time. </i>
 </p>
 
 ---
