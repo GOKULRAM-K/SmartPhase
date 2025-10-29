@@ -3,7 +3,7 @@
   <img src="assets/Logo.png" alt="Smart Phase Balancing System" width="25%">
 </p>
 
-<h1 align="center">⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System</h1>
+<h1 align="center">⚡ Smart Phase Balancing and Hybrid IoT Power Distribution System</h1> 
 <p align="center">
   <b>Scalable | Secure | Sustainable | Smarter Power for the Future</b><br>
   <i>An Intelligent, Hybrid IoT Architecture for Next-Generation Energy Management</i>
