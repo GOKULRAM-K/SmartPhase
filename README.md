@@ -583,7 +583,7 @@ Our group blends expertise from **electronics, computer science, and energy engi
   <img src="assets/Demo Works.jpg" width="75%" alt="Project Footer Logo">
 </p>
 
-<h4 align = "center"> Our Demo Work in VIT - Round 2 (Competed Against 850+ teams and made it to TOP 30 after 2 internal rounds!!) </h4>
+<h4 align = "center"> Our Demo Work in VIT - Round 2 (Competed Against 850+ teams and made it to TOP 30 after 2 internal rounds!! Internal Round Winners!!) </h4>
 <H4 align= "center" > The Only Team moving to National Level Competition in Our PS: 25064 </H4>
 
 ---
